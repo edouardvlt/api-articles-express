@@ -1,0 +1,41 @@
+{
+    "name": "api-articles-express",
+    "version": "1.0.0",
+    "description": "API Articles Express.js avec DAO (Mongoose + Sequelize)",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "test": "jest --verbose",
+        "test:coverage": "jest --verbose --coverage",
+        "sonar": "sonar-scanner"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "services/**/*.js"
+        ],
+        "coverageDirectory": "coverage",
+        "coverageReporters": [
+            "text",
+            "lcov"
+        ]
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.3.2",
+        "sequelize": "^6.37.3",
+        "sqlite3": "^5.1.7",
+        "uuid": "^10.0.0",
+        "winston": "^3.16.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.7",
+        "sonarqube-scanner": "^3.5.0"
+    }
+}
