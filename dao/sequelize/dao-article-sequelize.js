@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const IDAOArticle = require('./IDAOArticle');
+const IDAOArticle = require('../i-dao-article');
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',

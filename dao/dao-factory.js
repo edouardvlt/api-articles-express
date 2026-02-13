@@ -9,11 +9,11 @@ async function createDAO() {
         await mongoose.connect(uri);
         console.log('Connecté à MongoDB');
 
-        const DAOArticleMongoose = require('./DAOArticleMongoose');
+        const DAOArticleMongoose = require('./mongoose/dao-article-mongoose');
         return new DAOArticleMongoose();
 
     } else if (type === 'sequelize') {
-        const DAOArticleSequelize = require('./DAOArticleSequelize');
+        const DAOArticleSequelize = require('./sequelize/dao-article-sequelize');
         const dao = new DAOArticleSequelize();
         await dao.sync();
         console.log('Base SQLite synchronisée');
@@ -21,7 +21,7 @@ async function createDAO() {
         return dao;
 
     } else {
-        const DAOArticleMock = require('./DAOArticleMock');
+        const DAOArticleMock = require('./mock/dao-article-mock');
         console.log('Mode Mock activé (données en mémoire)');
         return new DAOArticleMock();
     }

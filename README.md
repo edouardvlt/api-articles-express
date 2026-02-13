@@ -37,3 +37,7 @@ L'URL de base est http://localhost:3000
 
 Pour lancer les tests unitaires :
 npm test
+
+## Partie 3 - SonarQube
+
+J'ai essayé de mettre en place SonarQube pour la troisième partie du TP (analyse de qualité de code), mais je n'ai pas réussi à le faire fonctionner à cause d'un problème sur ma machine.

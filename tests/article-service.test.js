@@ -1,5 +1,5 @@
-const ArticleService = require('../services/ArticleService');
-const DAOArticleMock = require('../dao/DAOArticleMock');
+const ArticleService = require('../services/article-service');
+const DAOArticleMock = require('../dao/mock/dao-article-mock');
 
 describe('ArticleService (avec DAOArticleMock)', () => {
     let dao;

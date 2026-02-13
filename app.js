@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
-const { createDAO } = require('./dao/DAOFactory');
-const ArticleService = require('./services/ArticleService');
+const { createDAO } = require('./dao/dao-factory');
+const ArticleService = require('./services/article-service');
 const createArticleRouter = require('./routes/article-routes');
 const authRouter = require('./auth/auth-routes');
 
